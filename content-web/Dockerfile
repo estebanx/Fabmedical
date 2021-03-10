@@ -10,6 +10,7 @@ WORKDIR /usr/src/app
 
 # Install app dependencies
 COPY package.json /usr/src/app/
+ENV CONTENT_API_URL http://localhost:3001
 RUN npm install
 
 # Bundle app source
